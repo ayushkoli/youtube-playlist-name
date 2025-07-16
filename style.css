@@ -193,7 +193,7 @@ button:active {
 @media (max-width: 600px) {
   .container {
     padding: 1rem 0.5rem;
-    max-width: 90vw;
+    width: 90vw;
   }
   .thumbnail-wrapper {
     max-width: 100vw;
@@ -204,30 +204,16 @@ button:active {
   .duration-table th, .duration-table td {
     padding: 0.4rem 0.1rem;
     font-size: 0.98rem;
-    word-break: break-word;
   }
   .yt-logo {
     height: 1.1em;
     margin-right: 0.35em;
   }
-  form {
-    flex-direction: column;
-    gap: 0.7rem;
-  }
-  button {
-    width: 100%;
-    font-size: 1.1rem;
-    padding: 0.8rem 0;
-  }
-  input[type="text"] {
-    font-size: 1.1rem;
-    padding: 0.8rem;
-  }
 }
 @media (max-width: 400px) {
   .container {
     padding: 0.5rem 0.1rem;
-    max-width: 90vw;
+    max-width: 100vw;
   }
   .thumbnail-wrapper {
     max-width: 98vw;
@@ -237,10 +223,6 @@ button:active {
   }
   .duration-table th, .duration-table td {
     font-size: 0.92rem;
-  }
-  button, input[type="text"] {
-    font-size: 1rem;
-    padding: 0.7rem;
   }
 }
 @media (max-width: 350px) {
@@ -252,9 +234,5 @@ button:active {
   }
   .duration-table th, .duration-table td {
     font-size: 0.85rem;
-  }
-  button, input[type="text"] {
-    font-size: 0.9rem;
-    padding: 0.6rem;
   }
 } 
