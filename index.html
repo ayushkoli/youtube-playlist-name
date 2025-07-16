@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>YouTube Playlist Duration Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>
+      <span class="yt-logo" aria-label="YouTube Logo">
+        <svg viewBox="0 0 98 70" width="38" height="28" xmlns="http://www.w3.org/2000/svg">
+          <g>
+            <path d="M95.2 11.1c-1-3.8-4-6.8-7.8-7.8C81.2 1.7 49 1.7 49 1.7s-32.2 0-38.4 1.6c-3.8 1-6.8 4-7.8 7.8C1.2 17.3 1.2 35 1.2 35s0 17.7 1.6 23.9c1 3.8 4 6.8 7.8 7.8C16.8 68.3 49 68.3 49 68.3s32.2 0 38.4-1.6c3.8-1 6.8-4 7.8-7.8C96.8 52.7 96.8 35 96.8 35s0-17.7-1.6-23.9z" fill="#FF0000"/>
+            <polygon points="39,50 67,35 39,20" fill="#fff"/>
+          </g>
+        </svg>
+      </span>
+      YouTube Playlist Duration Calculator
+    </h1>
+    <form id="playlist-form">
+      <input type="text" id="playlist-url" placeholder="Paste YouTube playlist URL here" required>
+      <button type="submit">Calculate Duration</button>
+    </form>
+    <div id="error-message" class="error"></div>
+    <div id="results" class="results" style="display:none;">
+      <div class="playlist-info">
+        <div class="thumbnail-wrapper" id="thumbnail-wrapper" style="display:none;">
+          <img id="playlist-thumbnail" class="thumbnail" src="" alt="Playlist Thumbnail" />
+        </div>
+        <div class="playlist-meta">
+        </div>
+      </div>
+      <div class="video-count-row">
+        <p><strong>Total no of Videos:</strong> <span id="video-count"></span></p>
+      </div>
+      <table class="duration-table">
+        <thead>
+          <tr>
+            <th>Speed</th>
+            <th>Duration</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>1x</td><td id="duration-1x"></td></tr>
+          <tr><td>1.25x</td><td id="duration-1_25x"></td></tr>
+          <tr><td>1.5x</td><td id="duration-1_5x"></td></tr>
+          <tr><td>1.75x</td><td id="duration-1_75x"></td></tr>
+          <tr><td>2x</td><td id="duration-2x"></td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html> 
