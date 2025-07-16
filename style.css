@@ -193,7 +193,11 @@ button:active {
 @media (max-width: 600px) {
   .container {
     padding: 1rem 0.5rem;
+<<<<<<< HEAD
     width: 90vw;
+=======
+    max-width: 90vw;
+>>>>>>> 90f8befa1d724e28f6ab84f7d549628daf8d1fb9
   }
   .thumbnail-wrapper {
     max-width: 100vw;
